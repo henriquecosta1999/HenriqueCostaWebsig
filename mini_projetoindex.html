@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrique Costa WebSig</title>
+    <link rel="stylesheet" href="index_estilo.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" 
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <!-- Geojson--> 
+
+    <script src="DADOS/Cabeceiras.geojson" defer></script>
+    <script src="DADOS/Redehidrografica.geojson " defer></script>
+    <script src="DADOS/EstaçaoMetereologica.geojson" defer></script>
+    <script src="DADOS/Instabilidades.geojson" defer></script>
+    <script src="DADOS/Estradas.geojson" defer></script>
+
+    <script src="leaflet-heat.js" defer ></script>
+
+    <script src="DADOS/Quinta.geojson" defer> </script>
+    <script src="DADOS/Solo.geojson" defer></script>
+    <script src="DADOS/Talhoes.geojson" defer ></script>
+
+    <script src="https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js"></script>
+
+
+    <!-- Heatmap -->
+
+    <script src="https://unpkg.com/esri-leaflet-heatmap@2.0.0/dist/esri-leaflet-heatmap.js"
+    integrity="sha512-fSJJRfO4PK90PN9jKKBzBZmzlNRsR12QA/CqTTWgfUTfLMF1Nrx5ouOqlpzC8LQIP+Qz0/G4BlHSgxHrCLHuMA=="
+    crossorigin=""></script>
+        
+
+</head>
+
+<body>
+   
+
+    <nav class="separadores">
+        <ul>
+            <li> <a href="mini_projetoindex.html#INICIO">Início</a></li>
+            <li><a href="mini_projetoindex.html#Sobre">Sobre Mim</a></li>
+            <li><a href="mini_projetoindex.html#Percurso">Percurso Académico</a></li>
+            <li><a href="mini_projetoindex.html#Habilitaçoes">Habilitações</a></li>
+            <li><a href="mini_projetoindex.html#Portefolio">Trabalhos realizados</a></li>
+            <li><a href="mini_projetoindex.html#Hobbies">Hobbies e ocupações</a></li>
+            <li> <a href="mini_projetoindex.html#WEBSIG">WEBSIG</a></li>
+            <li><a href="mini_projetoindex.html#Contactos">Contactos</a></li>
+    
+        </ul>
+    </nav>
+   
+    <section id="HEAD">
+        <div class="top"> BEM VINDO AO MEU CURRICULUM VITAE </div>
+        <div class="top"> JOSÉ HENRIQUE CAMPOS DA COSTA</div>
+        <form style="display: inline" action="mini_projetoindex.html#Sobre" method="get">
+            <button id="botao1">SOBRE MIM</button>
+        </form>
+    </section>
+  <!-- Botao do Inicio-->
+   
+    <section id="INICIO"> 
+        <div class="parte1">
+            
+        </div>
+    </section>
+
+ <!-- Botao do SOBRE MIM-->
+ 
+    <section id="Sobre">
+        <p class="cabeçalhos">Infornações Pessoais </p>
+        <div id="parte2">
+            <img src="Perfil2.jpg" alt="" width="560" height="472">
+            <div id="biografia">
+                <h2>HENRIQUE COSTA</h2>
+                <p>Data de nascimento: 27 - 11 - 1999 </p>
+                <p class="caixa">"Sou natural de Cavez, freguesia do concelho de Cabeceiras de Basto, desde cedo despertei o gosto pela Natureza e o modo de vida local. A meu percurso enquanto profissional tem assim uma mistura do bom que a cidade oferece com os prazeres da vida no campo. Recentemente tenho traçado caminho entre o Porto e Cabeceiras, com o objetivo de completar a minha formação enquanto Geógrafo. A família e amigos são o meu maior suporte para superar as adversidades. Gosto de viajar e anseio poder um dia ir ao Brasil, para já apenas destinos europeus."</p>
+                
+                <div class="espaço">
+                    <p>Conhecimentos:  Arcgis; Google Earth, Visual Studio Code, PostGreSQL </p>
+                    <p> Atualmente no Mestrado de SIG e Ordenamento do Território</p> 
+                    <p> Para mais detalhes sobre mim descarregar o CURRICULUM VITAE</p>
+                </div>
+                <a href="CVHenrique.pdf">  <img id="img1" src="CV1.png" alt="" width="64" height="64"></a> 
+           
+            </div>
+
+            
+        </div>
+
+    </section>
+
+
+
+<!-- Botao do Percurso Académico-->
+
+
+    <section id="Percurso">
+        <p class="cabeçalhos"> Percurso Académico </p>
+        <div id="STORY">
+            <iframe src="https://storymaps.arcgis.com/stories/f27dd64d5afc4203a8b7f0ed19b94947"  allowfullscreen allow="geolocation"></iframe>
+
+        </div>
+    </section>
+
+
+ <!-- Botao sobre as Habilitaçoes -->
+  <!-- imagens dos certificados -->
+
+
+    <section id="Habilitaçoes">
+        <p class="cabeçalhos">Certificados e Habilitações  </p>
+        <div class="certificados">
+            <img src="HABILITAÇOES/cursoR.jpg" alt="">
+            <img src="HABILITAÇOES/secundario.jpg" alt="">
+            <img src="HABILITAÇOES/cursotrator.jpg" alt="">
+            <img src="HABILITAÇOES/enig.jpg" alt="">
+            <img src="HABILITAÇOES/Licenciatura.jpg" alt="">
+            <img src="HABILITAÇOES/palestra.jpg" alt="">
+            <img src="HABILITAÇOES/concurso.jpg" alt="">
+        </div>
+
+    </section>
+
+ <!-- Botao do TRABALHOS REALIZADOS-->
+
+    <section id="Portefolio">
+        <p class="cabeçalhos"> Portefólio Académico</p>
+        <div class="PDF1">
+            <div class= Esquema1>
+                <a href="TRABALHOS/Relatório_GEOMORF.pdf"><img src="PDF.png" alt="" width="80" height="80"></a>
+                <p> "ANÁLISE MULTIRISCO APLICADA ÀS VERTENTES A MONTANTE DA ESTRADA MUNICIPAL nº518 JUNTO A ABOIM DAS CHOÇAS, ARCOS DE VALDEVEZ"  
+            </p>
+                <p>GEOMORFOLOGIA </p> 
+            </div>
+           
+           
+            <div class="Esquema2">  
+                <a href="TRABALHOS/Relatório_DRAOT.pdf"><img src="PDF.png" alt="" width="80" height="80"></a>
+            
+                <p>"PROCESSAMENTO E ANÁLISE DE IMAGENS E DADOS SATÉLITE, NO CONCELHO DE MONÇÃO" </p>
+                <p>DETEÇÃO REMOTA <br> APLICADA AO ORDENAMENTO <br> DO TERRITÓRIO</p> 
+            
+            </div>
+        
+            <div class="Esquema3">
+            
+                <a href="TRABALHOS/Relatório_AEAOT.pdf"><img src="PDF.png" alt="" width="80" height="80"></a>
+                <p>"ANÁLISE DE SUSCETIBILIDADE DEMOGRÁFICA E HABITACIONAL  A INCÊNDIOS FLORESTAIS NO DISTRITO DE VILA REAL" </p>
+                <p>ANÁLISE ESPACIAL <br> APLICADA AO ORDENAMENTO <br> DO TERRITÓRIO</p> 
+
+            </div>
+                  
+            <div class="Esquema4"> 
+                <a href="TRABALHOS/Relatório_AEDG.pdf"><img src="PDF.png" alt="" width="80" height="80"></a>
+                <p>"RELATÓRIO DO TRABALHO PRÁTICO"</p>  
+                <p>AQUISIÇÃO E EDIÇÃO DE DADOS GEOGRÁFICOS</p> 
+                
+            </div>
+
+        </div>
+
+
+    </section>
+
+<!-- Botao do Hobbies e Ocupações -->
+
+    <section id="Hobbies">
+        <p class="cabeçalhos"> Hobbies e tempos livres</p>
+        
+        <h3 id="folclore">Folclore</h3>
+        <div class="tarefas1">
+            <img id="r1" src="HOBBIES/rancho4.JPG" alt="Rancho">
+            <img id="r2" src="HOBBIES/rancho1.JPG" alt="rancho">           
+        </div>
+
+        <h3 id="amigos">Amigos</h3>
+        <div class="tarefas2">
+            <img id="r3" src="HOBBIES/amigos3.jpg" alt="">
+            <img id="r4" src="HOBBIES/amigos2.jpg" alt="">
+            <img id="r5" src="HOBBIES/amigos1.jpg" alt="">
+            <img id="r6" src="HOBBIES/amigos4.jpg" alt="">
+        </div>
+        
+        <h3 id="viagens">Viagens</h3> 
+        <div class="tarefas3">   
+            <img id="r7" src="HOBBIES/viagens.annecy.jpg" alt="">
+            <img id="r8" src="Hobbies/viagens.lyon.jpg" alt="">
+            <img id="r9" src="HOBBIES/viagens.genebra.jpg" alt=""> 
+        
+        </div>
+    </section>
+        
+    <div>
+        <div id="Visita">
+           <ul>
+            <li>Annecy</li>
+            <li>Lyon</li>
+            <li>Genebra</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--WebSig-->
+    <div>
+        <div id="WEBSIG">
+            <h1 class="cabeçalhos" >WEBSIG</h1>
+            <div id="Fundo"> 
+                <div id="Titulo">
+                    <p> <strong>Análise de movimentos de vertente em <br> Cabeceiras de Basto</strong> </p>   
+                </div>
+                <div id="Titulo2">
+                    <p> <strong>Carateristicas morfogeológicas da <br> Quinta do Seixo (Tabuaço)</strong></p>
+                </div>
+
+                <div id="CAIXA_TOT"> 
+                    <div id="Enquadramento1">
+                        <p>-Os movimentos de vertente representao um problema grave da sociedade. Com o aumento das áreas habitacionais e das estruturas de apoio à atividade humana, cresce também a preocupação com o ordenamento do território. </p>
+
+                        <p>-Neste WebSiG estão mensionados alguns dos locais de instabilidades ao longo de algumas vias rodoviárias no concelho de Cabeceiras de Basto. Este facto merece especial atenção quando representa um perigo direto à segurança de quem nelas circula.</p> 
+
+                        <p>-Cabeceiras de Basto é um concelho no Norte de Portugal, marcadamente montanhoso, no qual este evento  ocorre com alguma frequência causando danos ás populações. São representadas características físicas e microclimáticas deste territorio, como a rede Hidrográfica, e as estações metereológicas e a rede simplificada de estradas. Com o auxílio dos Mapas base, temos ainda possibilidade de reconhecer outras formas de relevo, com o ortofotomapa e o mapa de curvas de nível (elevação).</p>
+                            
+                    </div>
+
+                    <div id="Enquadramento2">
+                        <p>-Este segundo projeto nasce no âmbito de um trabalho de investigação realizado pelo Centro de estudos geográficos para a  <a href="https://sogrape.com/pt">Sogrape</a>, com o tema base relativo a "instabilidade de taludes"  na Quinta do Seixo(Douro interior).</p>
+
+                        <p>-Como tarefas a desenvolver neste sentido, destacam-se a medição da condutividade hidráulica saturada, da infiltração, a realizaçao de uma recolha in loco de sulcos e marcas de movimentação e instabilidade, e por fim a análise laboratorial de Amostras de Solos.</p>
+
+                        <p>-Este WebSiG retrata alguns desses elementos estudados e o faz um enquadramento geral das carateristicas da àrea de estudo. Concretamente são expostos alguns dos resultados laboratoriais efetuados para 14 amostras de solo e ainda parâmetros usados na medição da condutividade Hidraulica saturada. 
+
+                        </p>
+                    </div>
+                   
+                    <div id="Mapa">
+                        <script src="WebSig.js" defer> </script> 
+                    </div>
+                    
+                    <div id="Mapa_creditos">
+                     
+                        <p> <strong>Créditos:</strong> </p>
+
+                        <p> <a href="https://www.flaticon.com/">Flaticon</a> / <a href="https://snirh.apambiente.pt/">SNHIR</a> / <a href="https://www.openstreetmap.org/"> OSM</a> / <a href="https://sogrape.com/pt">Sogrape</a> </p>
+                        
+                        <p>  Trabalho de campo realizado na Quinta do Seixo em conjunto com o Prof. Doutor Carlos Bateira e os colegas Pedro e Filipe Cardoso</p>
+                    
+
+                    </div>
+                   
+                    
+                </div>  
+            
+            </div>
+         
+        </div>   
+       
+    
+    </div>
+
+
+
+    <!-- Contactos -->
+
+    <div id="Contactos">
+        <div class="cabeçalhos">Contactos</div>
+        <div>
+            <ul>
+                <li> <a href="https://www.facebook.com/henrique.costa.10420321"> <img src="FACEBOOK.png" alt="" height="60" width="60"></a> </li>
+                <li><a href="https://twitter.com/ricky_costa1999"> <img src="TWITTER.png" alt="" height="60" width="60" ></a> </li>
+                <li><a href="https://www.instagram.com/rickycosta27/">  <img src="INSTAGRAM.png" alt="" height="60" width="60"></a></li>
+                <li> <a href="https://www.linkedin.com/in/henrique-costa-600785228/"> <img src="LiNKDIN.png" alt="" height="60" width="60"> </a> </li>
+               
+            </ul>
+        </div>
+        
+
+    </div>
+
+<footer>
+    <div> Projeto WEBSIG <br> Designed by Henrique Costa 2022 
+         <p> All Rights Reserved</p> 
+         <p>© Copyright</p> 
+    </div>
+</footer>
+
+
+</body>
+
+
+
+
+</html>
+

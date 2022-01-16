@@ -1,0 +1,709 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: -1;
+    background-color:rgb(204, 205, 212);
+    opacity: 5;
+
+}
+.separadores{
+    display: flex;
+    background-color:rgb(90, 83, 83);
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    position: sticky;
+    border-radius: 10px;
+    z-index: 4 ;
+}
+.separadores ul{
+    display: flex;
+    list-style: none;
+    margin: 20px ;
+}
+.separadores ul li{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.separadores ul li a{
+    color:white;
+    text-decoration:none ;
+    padding: 8px 25px;
+    text-transform: uppercase;
+}
+.separadores ul li a:hover{
+    background-color: rgba(119, 118, 121, 0.87);
+    color: rgb(76, 80, 80);
+    box-shadow: 0 0 10px white;
+    border-radius: 20px;
+}
+/* BOTAO DO SOBRE MIM*/
+
+
+#botao1{
+    position: relative;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px rgb(42, 44, 43) solid;
+    border-radius: 25px;
+    background-color: tan;
+    margin-left: 45%;
+    padding: 10px;
+    top: 260px;
+}
+
+#botao1 a:hover{
+    background-color: rgba(119, 118, 121, 0.87);
+    color: rgb(76, 80, 80);
+    box-shadow: 0 0 10px white;
+    border-radius: 20px;
+}
+
+
+
+
+/* Texto inicial*/
+
+#HEAD .top{
+    
+    text-align: center; 
+    border-radius: 10px;
+    position: relative;
+    top: 130px;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 35px;
+    color: rgb(46, 40, 40);
+}
+#HEAD h1 a:hover{
+    background-color: darkolivegreen;
+    color: darkred;
+    box-shadow: 0 0 10px darkkhaki;
+    border-radius: 10px;
+
+}
+
+
+/* Pagina Inicial*/
+
+#INICIO::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url("fundo.jpg") center center/cover;
+    height: 900px; 
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+
+}
+
+.cabeçalhos{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+/* SOBRE MIM*/
+
+#Sobre{
+    padding: 20px;
+    position: relative;
+    margin-top: 540px;    
+}
+
+#Sobre .cabeçalhos{
+    margin-top: 10px;
+    position: relative;
+    margin-left:25% ;
+    border: 3px solid chocolate;
+    background-color: burlywood;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+#parte2{
+    position: relative;
+    /*border: 2px brown solid;*/
+    width: 100%;
+  
+}
+#parte2 img{
+    position: relative;
+    border: 6px solid white;
+    border-radius: 20px;
+    width: 25%;
+    height: 450px;
+}
+#biografia{
+    position: relative;
+    float: right;
+    text-align: justify;
+    padding: 10px ;
+    font-family: 'roboto condensed';
+    letter-spacing: 1px;
+    margin: 1px;
+   /* border: 2px black solid;*/
+    width: 70%;
+    height: 100%;
+    margin-right: 10px;
+    margin-top: 30px;
+    
+}
+
+#biografia .caixa{
+    position: relative;
+    padding: 4px;
+    font-weight: bold;
+    /*border: 3px rgb(21, 21, 179) solid;*/
+}
+#biografia h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'roboto condensed', Times, 'Times New Roman', serif;
+   /* border: 3px blue solid;*/
+}
+.espaço{
+    float: left;
+    width: 70%;
+}
+#parte2 #img1{
+    
+    float: right;
+    border: 1px coral solid;
+    width: 70px ;
+    height: 70px;
+    margin-top: 20px ;
+    margin-right: 90px;
+
+}
+
+/* Percurso Académico*/
+
+#STORY{
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 60px;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+iframe{
+    width: 100%;
+    height: 700px;
+}
+#Percurso .cabeçalhos{
+    margin-top: 50px;
+    position: relative;
+    margin-left:25% ;
+    border: 3px solid chocolate;
+    background-color: burlywood;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+
+}
+
+
+/* HABILITAÇOES*/
+
+
+#Habilitaçoes{
+    display: flex;
+    flex-direction: column;
+    
+}
+#Habilitaçoes .cabeçalhos{
+    margin-top: 80px;
+    position: relative;
+    margin-left:25% ;
+    border: 3px solid chocolate;
+    background-color: burlywood;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+
+}
+.certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.certificados img{
+    border: 5px solid black;
+    margin: 10px ;
+}
+
+
+/* TRABALHOS DESENVOLVIDOS*/
+
+#Portefolio .cabeçalhos{
+    margin-top: 80px;
+    position: relative;
+    margin-left:25% ;
+    border: 3px solid chocolate;
+    background-color: burlywood;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+}
+#Portefolio{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#Portefolio .PDF1{
+    display: flex; 
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+.Esquema1{
+    position:relative;
+    width: 25%;
+    height: 300px;
+    border:3px solid brown;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(85, 81, 82);
+    margin-bottom: 3px;
+    
+}
+.Esquema2{
+    position: relative;
+    width: 25%;
+    height: 300px;
+    border:3px solid brown;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(85, 81, 82);
+    margin-bottom: 3px;
+    
+}
+
+.Esquema3{
+    position: relative;
+    width: 25%;
+    height: 300px;
+    border:3px solid brown;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(85, 81, 82);
+    margin-bottom: 3px;
+      
+}
+.Esquema4{
+    position: relative;
+    width: 25%;
+    height: 300px;
+    border:3px solid brown;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(85, 81, 82);
+    margin-bottom: 3px;
+    
+}
+
+
+/* HOBBIES E OCUPAÇOES*/
+
+#Hobbies .cabeçalhos{
+    position: relative;
+    margin-top: 50px;
+    padding: 5px;
+    margin-left:25% ;
+    border: 3px solid chocolate;
+    background-color: burlywood;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+    
+}
+#folclore{
+    text-align: center;
+    border: 1px solid black;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+    }
+
+#tarefas1 img{
+    position: relative; 
+    display: flex;
+}
+#r1{
+    position: relative;
+    display: inline-block;
+    margin-left: 8.5%;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+  
+}
+#r2{
+    position: relative;
+    display: inline-block;
+    margin-right: 8.5%;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+   
+}
+
+#amigos{
+    text-align: center;
+    border: 1px solid black;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+}
+
+#r3{
+    position: relative;
+    display: inline-block;
+    margin-left: 8.5%;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+  
+}
+#r4{
+    position: relative;
+    display: inline-block;
+    margin-right: 8.5%;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+   
+}
+#r5{
+    position: relative;
+    display: inline-block;
+    margin-left: 8.5%;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+  
+}
+#r6{
+    position: relative;
+    display: inline-block;
+    margin-right: 8.5%;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+   
+}
+
+
+.tarefas2 img{
+    text-align: center;
+    border: 1px solid black;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+    flex-direction: column;
+    display: flex;
+}
+
+#viagens{
+    text-align: center;
+    border: 1px solid black;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+    position: relative;
+  
+}
+.tarefas3 img{
+    position: relative;
+    
+}
+
+#r7{
+    position: relative;
+    display: inline-block;
+    margin-left: 2.5%;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+  
+}
+#r8{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+}
+
+#r9{
+    position: relative;
+    display: inline-block;
+    margin-right: 2%;
+    text-align: center;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    padding: 8px;
+    border: 8px solid white;
+}
+
+
+.tarefas img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#Visita ul {
+    
+    letter-spacing: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#Visita ul li{
+    margin-right: 9%;
+    margin-left:7%;
+    text-align: center;
+   
+}
+/* WEBSIG*/
+
+#WEBSIG .cabeçalhos{
+    position: relative;
+    margin-top: 50px;
+    padding: 5px;
+    margin-left:25% ;
+    border: 3px solid chocolate;
+    background-color: burlywood;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+    
+    
+}
+
+#WEBSIG #Fundo{
+    background: url("Paisagem.jpg") center center/cover;
+    
+    
+}
+
+#CAIXA_TOT{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: black 2px solid;
+}
+
+
+#WEBSIG{
+    width: 100%;
+}
+   
+
+#Titulo{
+    float: left;
+    font-size: 40px;
+    font-family: 'Arial Nova';
+    color: rgb(255, 255, 255);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#Titulo2{
+    float: right;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#Enquadramento1{
+    float: left;
+    font-family:'roboto condensed';
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-style: italic;
+    text-align: justify;
+    letter-spacing: 1px;
+    background-color: rgb(199, 243, 245) ;
+    opacity: .8;
+    width: 43%;
+    margin-left: 22px ;
+    height: 300px;
+    padding: 15px;
+} 
+
+#Enquadramento2{
+    float:right;
+    font-family: 'roboto condensed', 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+    text-align: justify;
+    letter-spacing: 2px;
+    background-color: rgb(199, 243, 245);
+    opacity: .8;
+    width: 43%;
+    margin-right: 22px ;
+    height: 300px;
+    padding: 15px;
+} 
+
+
+#Mapa{
+    position: relative; 
+    width: 57%; height: 631px; z-index: 1;
+    margin-left: 22.5%;
+    border: 4px rgb(36, 27, 163) solid;
+    border-style: dashed;
+    padding: 4px;
+    margin-top: 30px;
+}
+
+#Mapa_creditos{
+    position: relative;
+    border-top: 100px ;
+    border: 1px rgb(36, 27, 163) solid;
+    width: 100%;
+    height: 90px;
+    background-color:rgb(199, 243, 245) ;
+    opacity: .9;
+    color: black;
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+
+/* CONTACTOS*/
+
+
+#Contactos{
+    position: relative;
+    
+}
+#Contactos .cabeçalhos{
+    position: relative;
+    padding: 5px;
+    margin-left:25% ;
+  
+    border: 3px solid chocolate;
+    background-color: burlywood;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px; 
+}
+
+#Contactos ul li{
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    padding: 10px 25px;
+    
+}
+#Contactos ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 30px;  
+}
+
+
+footer{
+   
+    text-align: center;
+    font-size: 6px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-indent: 2px;
+    
+}
